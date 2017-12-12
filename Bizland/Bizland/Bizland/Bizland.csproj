@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+    <PackageReference Include="Prism.Autofac.Forms" Version="7.0.0.269-pre" />
+    <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="2.3.0-beta2" />
+    <PackageReference Include="Xamarin.Forms.GoogleMaps.Bindings" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bizland.Core\Bizland.Core.csproj" />
+    <ProjectReference Include="..\BizlandApiService\BizlandApiService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Events\" />
+    <Folder Include="Views\Base\" />
+  </ItemGroup>
+
+</Project>
