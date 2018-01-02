@@ -34,6 +34,7 @@ namespace Bizland
             Builder.RegisterTypeForNavigation<LoginPage>("Login");
             Builder.RegisterTypeForNavigation<RootPage, RootPageViewModel>("RootPage");
             Builder.RegisterTypeForNavigation<MenuPage, MenuPageViewModel>("MenuPage");
+            Builder.RegisterTypeForNavigation<HomePage, HomePageViewModel>("HomePage");
         }
         protected override void OnStart()
         {
