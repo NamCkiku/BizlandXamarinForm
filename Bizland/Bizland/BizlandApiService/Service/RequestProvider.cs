@@ -1,7 +1,6 @@
 ﻿using Bizland.Core.Constant;
 using Bizland.Core.Extensions;
 using Bizland.Core.Helpers;
-using Bizland.Core.Log;
 using BizlandApiService.IService;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
@@ -281,14 +280,14 @@ namespace BizlandApiService.Service
                     if (response.StatusCode == HttpStatusCode.Forbidden ||
                         response.StatusCode == HttpStatusCode.Unauthorized)
                     {
-                        XCVLogger.WriteError($"status :{response.StatusCode} content:{content}");
+                        //XCVLogger.WriteError($"status :{response.StatusCode} content:{content}");
                     }
-                    XCVLogger.WriteError($"status :{response.StatusCode} content:{content}");
+                    //XCVLogger.WriteError($"status :{response.StatusCode} content:{content}");
                 }
             }
             catch (Exception e)
             {
-                XCVLogger.WriteError($"HandleResponse-error:{e.Message}");
+                //XCVLogger.WriteError($"HandleResponse-error:{e.Message}");
             }
         }
 
